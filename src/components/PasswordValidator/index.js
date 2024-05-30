@@ -22,12 +22,14 @@ const PasswordValidator = () => {
 
   return (
     <DivContainer>
-      <PasswordContainer>
-        <HeadingEle>Password Validator</HeadingEle>
-        <ParaEle>Check how strong and secure is your password</ParaEle>
-        <InputEle type="password" value={input} onChange={onChangeInput} />
-        <ErrorPara>{para}</ErrorPara>
-      </PasswordContainer>
+      <div>
+        <PasswordContainer>
+          <HeadingEle>Password Validator</HeadingEle>
+          <ParaEle>Check how strong and secure is your password</ParaEle>
+          <InputEle type="password" value={input} onChange={onChangeInput} />
+          <ErrorPara>{para}</ErrorPara>
+        </PasswordContainer>
+      </div>
     </DivContainer>
   )
 }
